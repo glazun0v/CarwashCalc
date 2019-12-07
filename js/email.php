@@ -32,7 +32,7 @@ else if ($type_service == 'Самообслуживание') {
 	$summ = 0;
 }
 
-$message = "Тип авто: $type_auto \nГос.номер: $gosnum \nТелефон: $phone \nE-mail: $email \nДата: $date \nВремя: $time \nВид мойки: $type_service \nУслуга 1: $cb1 \nУслуга 2: $cb2 \nУслуга 3: $cb3 \nУслуга 4: $cb4 \nУслуга 5: $cb5 \nУслуга 6: $cb6 \nУслуга 7: $cb7 \nУслуга 8: $cb8 \nСумма: $summ";
+$message = "Тип авто: $type_auto \nГос.номер: $gosnum \nТелефон: $phone \nE-mail: $email \nДата: $date \nВремя: $time \nВид мойки: $type_service \nУборка салона: $cb1 \nУборка багажника: $cb2 \nМойка ковриков: $cb3 \nЧернение резины: $cb4 \nПолировка пластика: $cb5 \nПокрытие воском: $cb6 \nУдаление битума: $cb7 \nМойка двигателя: $cb8 \nСумма: $summ";
 
 $pagetitle = "Новая заявка на мойку с сайта \"$sitename\"";
 mail($recepient, $pagetitle, $message, "Content-type: text/plain; charset=\"utf-8\"\n From: $recepient");
