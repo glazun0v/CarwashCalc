@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Автомойка</title>
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css" type="text/css" />	
+	<link rel="stylesheet" href="css/checkbox.css" type="text/css" />	
+	<link rel="stylesheet" href="css/hint.min.css" type="text/css" />	
+</head>
+<body>
+<div id="content">
+  <div id="header">
+    <a href="#">Главная </a>/ 
+		<a href="#">Как проехать </a>/ 
+    <a href="#">Контакты</a>
+  </div>
+  <div class="container">
+   <div class="starter">
+	   <h1>Запись на мойку автомобиля</h1>
+    </div>
+  </div>
+  <div id="center">
+	<div class="container-fluid">
+ 		<div class="row">
+ 			<div class="col-md-6 hint  hint--top  hint--info" data-hint="Обязательно поле">
+ 				<p>Тип автомобиля*</p>
+					<select name="type_auto">
+						<option>Легковой</option>
+						<option>Микроавтобус</option>
+						<option>Автобус</option>
+					</select>
+			</div>
+		
+			<div class="col-md-6 hint  hint--top  hint--info" data-hint="Обязательно поле">
+				<p>Гос.номер*</p><input type="text" name="number" placeholder="o000oo"/>
+		</div>
+		</div>
+		<div class="row">
+			<div class="col-md-6 hint  hint--top  hint--info" data-hint="Обязательно поле">
+ 				<p>Телефон*</p><input type="text" name="tel" placeholder="+7"/>
+ 			</div>
+ 			<div class="col-md-6 hint  hint--top  hint--info" data-hint="Обязательно поле">
+ 				<p>E-mail*</p><input type="text" name="email" placeholder="@"/>
+ 			</div>
+		</div>
+		<div class="row">
+ 			<div class="col-md-6 hint  hint--top  hint--info" data-hint="Обязательно поле">
+ 				<p>Дата*</p><input type="date" name="calendar"/>
+ 			</div>
+ 			<div class="col-md-6 hint  hint--top  hint--info" data-hint="Обязательно поле">
+ 				<p>Время*</p>
+ 				<select name="time">
+					<option>8:00</option>
+					<option>8:30</option>
+					<option>9:00</option>
+					<option>9:30</option>
+				</select>
+ 			</div>
+		</div>
+	</div>
+
+<h2>Предварительный расчет</h2>
+
+<div><p>Вид мойки*</p>
+	<select name="action">
+		<option>Контактная</option>
+		<option>Бесконтактная</option>
+		<option>Экспресс</option>
+	</select>
+</div>
+
+<div class="container-fluid-check">
+	<div class="row">
+		<div class="col-md-6">
+			<input type="checkbox" class="checkbox" id="cb1" name="cb1" value="50"/>
+			<label for="cb1">Уборка салона</label>
+		</div>
+		<div class="col-md-6">
+			<input type="checkbox" class="checkbox" id="cb2" name="cb1" value="50"/>
+			<label for="cb2">Стекла</label>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-6">
+			<input type="checkbox" class="checkbox" id="cb3" name="cb1" value="50"/>
+			<label for="cb3">Уборка багажника</label>
+		</div>
+		<div class="col-md-6">
+			<input type="checkbox" class="checkbox" id="cb4" name="cb1" value="50"/>
+			<label for="cb4">Полировка панели</label>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-6">
+			<input type="checkbox" class="checkbox" id="cb5" name="cb1" value="50"/>
+			<label for="cb5">Мойка ковриков (резина)</label>
+		</div>
+		<div class="col-md-6">
+			<input type="checkbox" class="checkbox" id="cb6" name="cb1" value="50"/>
+			<label for="cb6">Полировка салона</label>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-6">
+			<input type="checkbox" class="checkbox" id="cb7" name="cb1" value="50"/>
+			<label for="cb7">Чистка ковриков (ткань)</label>
+		</div>
+		<div class="col-md-6">
+			<input type="checkbox" class="checkbox" id="cb8" name="cb1" value="50"/>
+			<label for="cb8">Мойка двигателя</label>
+		</div>
+	</div>
+</div>
+	
+	<!-- <div><label>Первое число:</label><input type="text" name="first" placeholder="Введите число"/></div>
+	<div><label>Второе число:</label><input type="text" name="second" placeholder="Введите число"/></div> -->
+	
+	<div id="result"><h2>Стоимость 0 руб</h2></div>
+
+	<div class="wrapper"> 
+		<label>Пожалуйста, сообщайте о повреждениях лкп заранее!</label>
+	</div>
+	
+	<div>
+		<input type="checkbox" class="checkbox" id="agree" value=""/>
+		<label for="agree">Я согласен с обработкой моих персональных данных</label>
+	</div>
+
+	<div><input type="button" name="send" value="Записаться"/></div>
+ 
+ </div>
+</div>
+
+<div id="footer">
+  Copyright &copy; 2017 <a href="#" target="_blank">Oleg Glazunov</a>
+</div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script type="text/javascript" src="js/calc.js"></script>
+  <script type="text/javascript" src="js/email.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</body>
+</html>
